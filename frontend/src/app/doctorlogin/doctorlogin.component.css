@@ -1,0 +1,51 @@
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:10% 35%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid blue;
+  padding: 2% 0%;
+}
+
+h2 {
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+/* Input Fields */
+input[type="email"],
+input[type="password"] {
+  width: 300px;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Button Styling */
+button {
+  width: 320px;
+  padding: 10px;
+  background-color: #1976d2;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #125ea6;
+}
+
+/* Error Message */
+p {
+  font-size: 14px;
+  margin-top: 15px;
+}

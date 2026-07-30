@@ -1,0 +1,37 @@
+
+
+/* Navbar */
+nav {
+   margin: 2%;
+  display: flex;
+  gap: 10%;
+}
+
+/* Button Styling */
+nav button {
+  background-color:  #0059b3;
+  border: none;
+  
+  border-radius: 5px;
+  padding: 8px 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover {
+  background-color: #4db8ff;
+}
+
+/* Link Styling */
+nav a.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  display: inline-block;
+}
+
+/* On hover - link color */
+nav a.nav-link:hover {
+  color: white;
+}

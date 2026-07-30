@@ -1,0 +1,12 @@
+<form *ngIf="formgroup" [formGroup]="formgroup" (ngSubmit)="newdoctor()">
+<h1>Doctor Signup</h1>
+    <input type="text" placeholder="Enter name" formControlName="name"><br>
+     <input type="text" placeholder="Enter specialization" formControlName="specialization"><br>
+    <input type="email" placeholder="Enter email" formControlName="email"><br>
+    <input type="password" placeholder="Enter password" formControlName="password"><br>
+    <input type="text" placeholder="Enter phone number" formControlName="phnno"><br>
+
+    <button type="submit" [disabled]="formgroup.invalid">Submit</button>
+
+  </form>
+  

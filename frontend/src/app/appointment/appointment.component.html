@@ -1,0 +1,32 @@
+<h1>All Appointments</h1>
+<table>
+    <thead>
+        <tr> 
+
+            <th>Id</th>
+            <th>Name</th>
+            <th>Gender</th>
+            <th>Doctorid</th>
+            <th>Date</th>
+            <th>Phonenumber</th>
+            <th>Problem</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of details">
+            <td>{{d.id}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.gender}}</td>
+            <td>{{d.doctorid}}</td>
+            <td>{{d.date}}</td>
+            <td>{{d.phoneno}}</td>
+            <td>{{d.problem}}</td>
+            <td>
+                    
+                    <button class="btn btn-success" (click)=" deletepatient(d.id)">Completed</button>
+
+                </td>
+        </tr>
+    </tbody>
+</table>

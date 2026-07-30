@@ -1,0 +1,28 @@
+<h1>Doctors</h1>
+<table>
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>specialization</th>
+            <th>email</th>
+            <th>password</th>
+            <th>phonenumber</th>
+          <!--  <th>Actions</th>-->
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let d of details">
+            <td>{{d.id}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.specialization}}</td>
+            <td>{{d.email}}</td>
+            <td>{{d.password}}</td>
+            <td>{{d.phnno}}</td>
+            
+          <!--  <td>
+                <button class="btn btn-danger" (click)="deletedoctor(d.id)">Delete</button>
+            </td>-->
+        </tr>
+    </tbody>
+</table>

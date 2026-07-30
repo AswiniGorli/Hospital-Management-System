@@ -1,0 +1,239 @@
+/* Global Styles */
+body {
+  margin: 5px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #003366;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+/* Hero Section */
+.hero {
+  background-color: #e6f2ff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #0059b3;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #004080;
+}
+
+/* Services & Doctors */
+.services, .doctors {
+  padding: 40px 20px;
+  background-color: #f2f9ff;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  border: 1px solid #cce0ff;
+  border-radius: 8px;
+  width: 300px;
+  margin: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  color: #0059b3;
+}
+
+/* Why Choose Us Section */
+.why-us {
+    background: #f4f9ff;
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.why-us h2 {
+    color: #003366;
+    font-size: 36px;
+    margin-bottom: 45px;
+    font-weight: bold;
+}
+
+.why-us .cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.why-us .card {
+    background: #ffffff;
+    width: 300px;
+    padding: 30px 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 18px rgba(0, 51, 102, 0.12);
+    transition: all 0.3s ease;
+}
+
+.why-us .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 51, 102, 0.2);
+}
+
+.why-us .card h3 {
+    color: #003366;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.why-us .card p {
+    color: #555;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .why-us .cards {
+        gap: 20px;
+    }
+
+    .why-us .card {
+        width: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .why-us {
+        padding: 50px 15px;
+    }
+
+    .why-us h2 {
+        font-size: 30px;
+    }
+
+    .why-us .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .why-us .card {
+        width: 90%;
+        max-width: 350px;
+    }
+}
+
+.stats {
+    background: #f4f8fb;
+    padding: 60px 20px;
+}
+
+.stats .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.stat {
+    background: #ffffff;
+    width: 220px;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.stat h2 {
+    color: #007bff;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.stat p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 40px 20px 20px;
+    margin-top: 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+}
+
+.footer-section h3 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 22px;
+    border-bottom: 2px solid #66b3ff;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.footer-section p {
+    margin: 8px 0;
+    color: #e6f2ff;
+    line-height: 1.6;
+}
+
+.footer-section a {
+    color: #99ccff;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: #ffffff;
+}
+
+footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 25px 0;
+}
+
+.copyright {
+    text-align: center;
+    color: #d9ecff;
+    font-size: 14px;
+}
