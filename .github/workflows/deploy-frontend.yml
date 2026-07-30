@@ -30,12 +30,12 @@ jobs:
       - name: Install Dependencies
         run: |
           cd frontend
-          npm ci || npm install
+          npm ci || npm install --legacy-peer-deps
 
       - name: Build Angular App
         run: |
           cd frontend
-          npx ng build --configuration production --base-href /Hospital-Management-System/
+          npm run build -- --configuration production --base-href /Hospital-Management-System/
 
       - name: Upload GitHub Pages Artifact
         uses: actions/upload-pages-artifact@v3
